@@ -1,13 +1,141 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif, "SmytheSans";
+  display:flex;
+  justify-content: center;
+  justify-items:center;
+  padding:100px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+div#root {
+  background-color: #f3f3f3;
+  width: 900px;
+  height: 700px;
+}
+
+
+.App{
+  display:flex;
+  justify-content: center;
+  justify-items:center;
+   border: 1px soild black;
+   background-color:black;
+   margin:auto;
+
+
+}
+
+/* Bargraph */
+.bar {
+  width: 50px;
+  fill: #97bbcd;
+}
+
+.grid .tick .text {
+  margin-top: 10px;
+  color: red;
+}
+
+#root > div > h1 > div > svg > g > g.x.axis {
+  margin-top: 10px;
+  font-size: 30px;
+  color: red;
+  stroke:red;
+}
+
+path,
+line {
+  stroke-opacity: 0;
+  color:#fff;
+}
+
+/* ??? */
+/* .g .tick .line {
+  stroke-opacity: 0;
+} */
+
+/* line#limit {
+  stroke-width: 2;
+  stroke-dasharray: 8 10;
+} */
+
+.grid .tick line {
+  stroke: #fff;
+  /* stroke-opacity: 0.3; */
+}
+
+.grid .tick {
+  /* font-family: SmytheSans; */
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+}
+
+.Axis line {
+  stroke: #fff;
+}
+
+/* Text */
+text {
+  font-size: 12px;
+  fill: #FFF;
+}
+
+/* text {
+  font-family: SmytheSans;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #485465;
+} */
+
+h1.title {
+  /* font-family: 'SmytheSans'; */
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #FFF;
+}
+
+p.age {
+  /* font-family: SmytheSans; */
+  display: inline-block;
+  position: absolute;
+  left: 340px;
+  /* ??? */
+  top: 200px;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 2px;
+  left: -15px;
+  background-color: #97bbcd;
+  border-radius: 50%;
+  display: inline-block;
 }
